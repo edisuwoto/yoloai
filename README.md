@@ -1,92 +1,111 @@
+# 📘 Pelatihan Computer Vision dengan Python, OpenCV, TensorFlow, YOLO, dan Google Colab
 
-# Pelatihan Computer Vision dengan Python, OpenCV, TensorFlow, YOLO, dan Google Colab
+Repositori ini berisi kumpulan **notebook pelatihan Computer Vision** berbasis Python, OpenCV, TensorFlow, dan YOLO.  
+Materi disusun bertahap mulai dari dasar hingga studi kasus implementasi dunia nyata seperti **deteksi kebakaran** dan **analisa kerutan wajah**.
 
-Repositori ini berisi kumpulan notebook pelatihan **Computer Vision** berbasis YOLO dan deep learning, disusun untuk memudahkan pembelajaran mulai dari dasar hingga implementasi studi kasus.
-
-📌 **Repo GitHub:** [https://github.com/edisuwoto/yoloai](https://github.com/edisuwoto/yoloai)
+📌 **Repo GitHub:** [edisuwoto/yoloai](https://github.com/edisuwoto/yoloai)
 
 ---
 
 ## 📂 Struktur Modul
 
-### 1. **Dasar Computer Vision**
-- Pengenalan citra digital (RGB, Grayscale, dll)
-- Operasi dasar: cropping, resizing, filtering
-- Visualisasi dengan Matplotlib dan OpenCV
+### **Module 1: Dasar Computer Vision**
+- Apa itu Computer Vision?
+- Pengenalan citra digital (RGB, Grayscale, dll.)
+- Operasi dasar gambar: cropping, resizing, filtering
+- Visualisasi dengan Matplotlib & OpenCV
 
-### 2. **Pengenalan YOLO (You Only Look Once)**
+### **Module 2: Pengenalan YOLO (You Only Look Once)**
 - Arsitektur YOLO
 - Perbandingan YOLOv3, YOLOv4, YOLOv5, YOLOv8
 - Demo inference dengan model pre-trained
 
-### 3. **Persiapan Dataset**
+### **Module 3: Persiapan Dataset**
 - Labeling data dengan LabelImg/Roboflow
 - Augmentasi data
 - Struktur folder untuk training YOLO
 
-### 4. **Training Model YOLO**
+### **Module 4: Training Model YOLO**
 - Konfigurasi hyperparameter
 - Transfer learning
-- Training di Google Colab / lokal GPU
+- Training di Google Colab / GPU lokal
 
-### 5. **Evaluasi Model**
+### **Module 5: Evaluasi Model**
 - mAP (Mean Average Precision)
 - Precision-Recall Curve
 - Confusion Matrix
 
-### 6. **Optimisasi & Deployment**
-- Konversi model ke format ONNX / TensorRT
+### **Module 6: Optimisasi & Deployment**
+- Konversi model ke ONNX / TensorRT
 - Optimasi inference speed
 - Deployment ke server / edge device
 
-### 7. **Studi Kasus 1: Deteksi Kebakaran**
+### **Module 7: Studi Kasus 1 — Deteksi Kebakaran**
 - Dataset deteksi api
-- Training model YOLO untuk kebakaran
-- Integrasi ke sistem CCTV
+- Training YOLO untuk kebakaran
+- Integrasi dengan sistem CCTV
 
-### 8. **Studi Kasus 2: Deteksi Kerutan Wajah & Analisa Usia**
+### **Module 8: Studi Kasus 2 — Deteksi Kerutan Wajah & Analisa Usia**
 - Dataset kerutan wajah & age prediction
-- Training multi-task YOLO (deteksi area + klasifikasi usia)
-- Demo real-time dengan webcam
+- YOLO untuk deteksi wajah
+- CNN tambahan untuk klasifikasi kerutan & usia
 
 ---
 
-## 📌 Demo Deteksi Kerutan Wajah & Analisa Usia
+## 🎯 Demo: Deteksi Kerutan Wajah & Analisa Usia
 
-Notebook ini memanfaatkan YOLO untuk mendeteksi wajah dan CNN tambahan untuk:
-- Menghitung tingkat kerutan
-- Memprediksi rentang usia
+Notebook ini memanfaatkan:
+- **YOLO** → mendeteksi area wajah  
+- **CNN tambahan** → menganalisa tingkat kerutan & memprediksi usia  
 
 **Contoh Output:**
-- Bounding box pada wajah
-- Label: "Wrinkle Level: Medium, Age: 32-38"
+- Bounding box wajah
+- Label prediksi: `Wrinkle Level: Medium, Age: 32-38`
 
 ---
 
 ## 🚀 Cara Menjalankan di Google Colab
 
-1. **Buka link Colab** sesuai modul  
-   Contoh:
-- [1 Pengenalan Computer Vision](https://colab.research.google.com/github/edisuwoto/yoloai/blob/main/Module_1_Intro_Computer_Vision.ipynb) 
-- [2 Operasi Dasar Gambar](https://colab.research.google.com/github/edisuwoto/yoloai/blob/main/Module_2_Basic_Image_Operations.ipynb) 
-- [3 Filtering & Edge Detection](https://colab.research.google.com/github/edisuwoto/yoloai/blob/main/Module_3_Filtering_Edge_Detection.ipynb) 
-- [4 Haar Cascade Detection](https://colab.research.google.com/github/edisuwoto/yoloai/blob/main/Module_4_Haar_Cascade_Detection.ipynb) 
-- [5 Pengenalan YOLO](https://colab.research.google.com/github/edisuwoto/yoloai/blob/main/Module_5_Intro_YOLO.ipynb) 
-- [6 Training YOLO Custom Dataset](https://colab.research.google.com/github/edisuwoto/yoloai/blob/main/Module_6_Train_YOLO_Custom_Dataset.ipynb) 
-- [7 Testing & Evaluasi YOLO](https://colab.research.google.com/github/edisuwoto/yoloai/blob/main/Module_7_Test_Evaluate_YOLO.ipynb) 
+1. **Klik link modul** sesuai topik:
+   - [Module 1 — Intro Computer Vision](https://colab.research.google.com/github/edisuwoto/yoloai/blob/main/Module_1_Intro_Computer_Vision.ipynb)  
+   - [Module 2 — Basic Image Operations](https://colab.research.google.com/github/edisuwoto/yoloai/blob/main/Module_2_Basic_Image_Operations.ipynb)  
+   - [Module 3 — Filtering & Edge Detection](https://colab.research.google.com/github/edisuwoto/yoloai/blob/main/Module_3_Filtering_Edge_Detection.ipynb)  
+   - [Module 4 — Haar Cascade Detection](https://colab.research.google.com/github/edisuwoto/yoloai/blob/main/Module_4_Haar_Cascade_Detection.ipynb)  
+   - [Module 5 — Intro YOLO](https://colab.research.google.com/github/edisuwoto/yoloai/blob/main/Module_5_Intro_YOLO.ipynb)  
+   - [Module 6 — Train YOLO Custom Dataset](https://colab.research.google.com/github/edisuwoto/yoloai/blob/main/Module_6_Train_YOLO_Custom_Dataset.ipynb)  
+   - [Module 7 — Test & Evaluate YOLO](https://colab.research.google.com/github/edisuwoto/yoloai/blob/main/Module_7_Test_Evaluate_YOLO.ipynb)  
+   - [Module 8 — Wrinkle Detection & Age Analysis](https://colab.research.google.com/github/edisuwoto/yoloai/blob/main/module8_wrinkle_age.ipynb)  
 
-- [Module 8 - Wrinkle Detection & Age Analysis](https://colab.research.google.com/github/edisuwoto/yoloai/blob/main/module8_wrinkle_age.ipynb)
-
-2. **Klik "Copy to Drive"** untuk membuat salinan
-3. **Jalankan sel kode** dari atas ke bawah
+2. Klik **Copy to Drive** untuk menyimpan ke Google Drive.  
+3. Jalankan sel kode dari atas ke bawah.
 
 ---
+## 📸 Hasil Deteksi YOLO
 
-## 📦 Instalasi Lokal
+Berikut contoh hasil deteksi pada modul pelatihan:
+
+### 1. Deteksi Objek Umum (COCO dataset)
+<img src="assets/yolo_detection_coco.jpg" alt="YOLO Object Detection" width="500"/>
+
+### 2. Deteksi Kebakaran (Studi Kasus 1)
+<img src="assets/yolo_fire_detection.jpg" alt="YOLO Fire Detection" width="500"/>
+
+### 3. Deteksi Kerutan Wajah & Analisa Usia (Studi Kasus 2)
+<img src="assets/yolo_wrinkle_age.jpg" alt="YOLO Wrinkle and Age Detection" width="500"/>
+---
+## 💻 Instalasi Lokal
+
+Jika ingin dijalankan di laptop dengan Python:
+
 ```bash
 git clone https://github.com/edisuwoto/yoloai.git
 cd yoloai
 pip install -r requirements.txt
 
-📧 **Author:** Edi Suwoto  
-🔗 **Repo:** [https://github.com/edisuwoto/yoloai](https://github.com/edisuwoto)
+## menjalankan di mac os
+# Buka terminal
+python3.10 -m venv yolo_env
+source yolo_env/bin/activate
+
+pip install --upgrade pip
+pip install ultralytics opencv-python matplotlib
