@@ -75,6 +75,7 @@ Notebook ini memanfaatkan:
    - [Module 6 — Train YOLO Custom Dataset](https://colab.research.google.com/github/edisuwoto/yoloai/blob/main/Module_6_Train_YOLO_Custom_Dataset.ipynb)  
    - [Module 7 — Test & Evaluate YOLO](https://colab.research.google.com/github/edisuwoto/yoloai/blob/main/Module_7_Test_Evaluate_YOLO.ipynb)  
    - [Module 8 — Wrinkle Detection & Age Analysis](https://colab.research.google.com/github/edisuwoto/yoloai/blob/main/module8_wrinkle_age.ipynb)  
+   - [Module 8 — Demo](https://colab.research.google.com/github/edisuwoto/yoloai/blob/main/module8_demo.ipynb)  
 
 2. Klik **Copy to Drive** untuk menyimpan ke Google Drive.  
 3. Jalankan sel kode dari atas ke bawah.
@@ -85,13 +86,8 @@ Notebook ini memanfaatkan:
 Berikut contoh hasil deteksi pada modul pelatihan:
 
 ### 1. Deteksi Objek Umum (COCO dataset)
-<img src="assets/yolo_detection_coco.jpg" alt="YOLO Object Detection" width="500"/>
+<img src="demo/Figure_1.png" alt="YOLO Object Detection" width="500"/>
 
-### 2. Deteksi Kebakaran (Studi Kasus 1)
-<img src="assets/yolo_fire_detection.jpg" alt="YOLO Fire Detection" width="500"/>
-
-### 3. Deteksi Kerutan Wajah & Analisa Usia (Studi Kasus 2)
-<img src="assets/yolo_wrinkle_age.jpg" alt="YOLO Wrinkle and Age Detection" width="500"/>
 ---
 ## 💻 Instalasi Lokal
 
@@ -106,6 +102,17 @@ pip install -r requirements.txt
 # Buka terminal
 python3.10 -m venv yolo_env
 source yolo_env/bin/activate
+# Aktifkan dulu env
+source yolo_env/bin/activate  
+
+# Install tensorflow (khusus MacOS ARM pakai tensorflow-macos)
+pip install tensorflow-macos
+
+# Jika butuh support GPU Metal (lebih cepat di Mac M1/M2/M3)
+pip install tensorflow-metal
 
 pip install --upgrade pip
 pip install ultralytics opencv-python matplotlib
+
+pip uninstall opencv-python -y
+pip install opencv-contrib-python

@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import urllib.request
 
 # URL valid untuk gambar Lenna
-url = "https://raw.githubusercontent.com/edisuwoto/yoloai/main/face/lena.png"
+url = "https://raw.githubusercontent.com/edisuwoto/yoloai/main/face/Lenna.png"
 urllib.request.urlretrieve(url, "lenna.png")
 
 # Baca gambar dalam grayscale
