@@ -76,6 +76,7 @@ Notebook ini memanfaatkan:
    - [Module 7 — Test & Evaluate YOLO](https://colab.research.google.com/github/edisuwoto/yoloai/blob/main/Module_7_Test_Evaluate_YOLO.ipynb)  
    - [Module 8 — Wrinkle Detection & Age Analysis](https://colab.research.google.com/github/edisuwoto/yoloai/blob/main/module8_wrinkle_age.ipynb)  
    - [Module 8 — Demo](https://colab.research.google.com/github/edisuwoto/yoloai/blob/main/module8_demo.ipynb)  
+   - [Module 8 — Demo 1](https://colab.research.google.com/github/edisuwoto/yoloai/blob/main/module8_demo1.ipynb)  
 
 2. Klik **Copy to Drive** untuk menyimpan ke Google Drive.  
 3. Jalankan sel kode dari atas ke bawah.
