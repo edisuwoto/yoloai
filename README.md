@@ -40,10 +40,11 @@ Materi disusun bertahap mulai dari dasar hingga studi kasus implementasi dunia n
 - Optimasi inference speed
 - Deployment ke server / edge device
 
-### **Module 7: Studi Kasus 1 — Deteksi Kebakaran**
-- Dataset deteksi api
-- Training YOLO untuk kebakaran
-- Integrasi dengan sistem CCTV
+### **Module 7: Feature Maching and Object Training**
+- Feature Matching Techniques (SIFT, SURF, ORB)
+- Object Tracking basics
+- Object Tracking with Kalman Filters
+- Multi-object Tracking
 
 ### **Module 8: Studi Kasus 2 — Deteksi Kerutan Wajah & Analisa Usia**
 - Dataset kerutan wajah & age prediction
