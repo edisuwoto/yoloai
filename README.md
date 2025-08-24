@@ -90,6 +90,17 @@ Berikut contoh hasil deteksi pada modul pelatihan:
 ### 1. Deteksi Objek Umum (COCO dataset)
 <img src="demo/Figure_1.png" alt="YOLO Object Detection" width="500"/>
 
+### 2. Deteksi Objek Banjir
+<video width="500" controls>
+  <source src="demo/flood_detection_output.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+### 3. Deteksi Kebakaran
+<video width="500" controls>
+  <source src="demo/fire_output.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 ---
 ## 💻 Instalasi Lokal
 
